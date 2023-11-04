@@ -1,0 +1,188 @@
+@charset "UTF-8";
+.list__input button:hover,
+.list__input input[type=submit]:hover {
+  transition: all 0.3s linear 0.1s;
+}
+
+.list__input button:hover,
+.list__input input[type=submit]:hover, .list__input input[type=text]:hover {
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: Arial;
+}
+
+input, button, textarea {
+  font-family: Arial;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.list__input button:hover,
+.list__input input[type=submit]:hover {
+  transition: all 0.3s linear 0.1s;
+}
+
+.list__input button:hover,
+.list__input input[type=submit]:hover, .list__input input[type=text]:hover {
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.9724264706) 0%, rgb(76, 9, 121) 36%);
+  display: flex;
+  padding-top: 200px;
+}
+
+.list {
+  margin: 0 auto;
+}
+.list__title {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.list__flex {
+  display: flex;
+  flex-direction: column;
+}
+.list__input {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.list__input .addDeal {
+  display: none;
+}
+.list__input input[type=text] {
+  width: 480px;
+  font-size: 21px;
+  padding: 9px;
+  background-color: #800080;
+  pointer-events: none;
+  color: #fff;
+}
+.list__input input[type=text]:hover {
+  transition: all 0.3s ease 0.1s;
+}
+.list__input:hover {
+  opacity: 0.75;
+  transform: translateX(5px);
+  transition: all 0.3s linear 0.1s;
+  box-shadow: 9px 11px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.list__input:first-child {
+  margin-bottom: 30px;
+  cursor: default;
+}
+.list__input:first-child input[type=text] {
+  background-color: #fff;
+  pointer-events: visible;
+  width: 400px;
+  color: #000;
+}
+.list__input:first-child .done {
+  display: none;
+}
+.list__input:first-child .delete {
+  display: none;
+}
+.list__input:first-child .addDeal {
+  display: inline-block;
+}
+.list__input > * {
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.list__input button,
+.list__input input[type=submit] {
+  width: 40px;
+}
+.list__input button:hover,
+.list__input input[type=submit]:hover {
+  background-color: #692c92;
+  color: #fff;
+}
+.list__input input[type=submit] {
+  width: auto;
+  font-size: 21px;
+  padding: 9px;
+}
