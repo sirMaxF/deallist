@@ -135,8 +135,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 480px;
   font-size: 21px;
   padding: 9px;
-  background-color: #800080;
   pointer-events: none;
+}
+.list__input input[type=text]._active {
+  background-color: #800080;
   color: #fff;
 }
 .list__input input[type=text]:hover {
@@ -148,9 +150,16 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s linear 0.1s;
   box-shadow: 9px 11px 8px 0px rgba(34, 60, 80, 0.2);
 }
+.list__input .done._active {
+  background-color: #692c92;
+}
 .list__input:first-child {
   margin-bottom: 30px;
   cursor: default;
+}
+.list__input:first-child:hover {
+  transform: translateX(0);
+  opacity: 1;
 }
 .list__input:first-child input[type=text] {
   background-color: #fff;
